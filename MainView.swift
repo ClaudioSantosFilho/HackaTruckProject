@@ -2,21 +2,20 @@ import SwiftUI
 
 struct MainView: View {
     var body: some View {
-        
         TabView{
             
-            PinkView()
-                .tabItem { Label("Pink", systemImage: "paintpalette") }
+            MapView()
+                .tabItem { Label("World", systemImage: "globe") }
             
-            BlueView()
-                    .tabItem { Label ("Blue", systemImage: "paintbrush.pointed") }
+            BRZView()
+                .tabItem { Label("BRZ", systemImage: "globe.americas") }
             
-            GrayView()
-                    .tabItem { Label ("Gray", systemImage: "paintpalette") }
+            USAView()
+                    .tabItem { Label ("USA", systemImage: "globe.americas") }
             
-            ListView()
-                    .tabItem { Label ("List", systemImage: "hand.point.up.left.and.text") }
-            
+            AUSView()
+                    .tabItem { Label ("AUS", systemImage: "globe.asia.australia") }
+
         }
     }
 }
